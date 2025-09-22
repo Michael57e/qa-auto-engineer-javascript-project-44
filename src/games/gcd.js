@@ -21,7 +21,7 @@ const makeRound = () => {
   const x = getRandomNumber(1, 100)
   const y = getRandomNumber(1, 100)
   
-  const question = `${x}, ${y}`
+  const question = `${x} ${y}`
   const answer = String(getGcd(x, y))
   return [question, answer]
 }
