@@ -18,4 +18,6 @@ const makeRound = () => {
   return [String(number), correctAnswer]
 }
 
-export default () => runEngine(rule, makeRound)
+const startPrimeGame = () => runEngine(rule, makeRound)
+
+export default startPrimeGame

@@ -25,4 +25,6 @@ const getCalculation = () => {
   return [`${a} ${op} ${b}`, String(correctAnswer)]
 }
 
-export default () => runEngine(rule, getCalculation)
+const startCalcGame = () => runEngine(rule, getCalculation)
+
+export default startCalcGame

@@ -13,4 +13,6 @@ const getQuestionAndAnswer = () => {
   return [question, correctAnswer]
 }
 
-export default () => runEngine(rule, getQuestionAndAnswer)
+const startEvenGame = () => runEngine(rule, getQuestionAndAnswer)
+
+export default startEvenGame
