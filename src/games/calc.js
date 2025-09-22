@@ -11,15 +11,15 @@ const getCalculation = () => {
 
   let correctAnswer
   switch (op) {
-  case '+':
-    correctAnswer = a + b
-    break
-  case '-':
-    correctAnswer = a - b
-    break
-  case '*':
-    correctAnswer = a * b
-    break
+    case '+':
+      correctAnswer = a + b
+      break
+    case '-':
+      correctAnswer = a - b
+      break
+    case '*':
+      correctAnswer = a * b
+      break
   }
 
   return [`${a} ${op} ${b}`, String(correctAnswer)]

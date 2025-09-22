@@ -14,15 +14,15 @@ export default [
     files: ['**/*.js'],
     languageOptions: {
       ecmaVersion: 'latest',
-      sourceType: 'module',     // у тебя "type": "module" в package.json
+      sourceType: 'module', // у тебя "type": "module" в package.json
       globals: { ...globals.node },
     },
     rules: {
       // мягкие настройки по умолчанию — при необходимости меняй
-      'no-console': 'warn',     // чтобы CLI-скрипты не ломались — настроим ниже override
+      'no-console': 'warn', // чтобы CLI-скрипты не ломались — настроим ниже override
       'indent': ['error', 2],
       'quotes': ['error', 'single', { avoidEscape: true }],
-      'semi': ['error', 'always']
+      'semi': ['error', 'always'],
     },
   },
 
@@ -33,7 +33,7 @@ export default [
       globals: { ...globals.node },
     },
     rules: {
-      'no-console': 'off'
-    }
-  }
+      'no-console': 'off',
+    },
+  },
 ]

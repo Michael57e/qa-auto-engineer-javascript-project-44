@@ -8,7 +8,7 @@ const getGcd = (x, y) => {
   let b = y
 
   if (b === 0) return a
-  
+
   while (b !== 0) {
     const temp = b
     b = a % b
@@ -20,7 +20,7 @@ const getGcd = (x, y) => {
 const makeRound = () => {
   const x = getRandomNumber(1, 100)
   const y = getRandomNumber(1, 100)
-  
+
   const question = `${x} ${y}`
   const answer = String(getGcd(x, y))
   return [question, answer]
