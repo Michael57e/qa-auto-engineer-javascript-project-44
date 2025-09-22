@@ -1,6 +1,6 @@
 // eslint.config.js
-import js from '@eslint/js';
-import globals from 'globals';
+import js from '@eslint/js'
+import globals from 'globals'
 
 export default [
   // Игнорируем стандартные папки
@@ -36,4 +36,4 @@ export default [
       'no-console': 'off'
     }
   }
-];
+]
