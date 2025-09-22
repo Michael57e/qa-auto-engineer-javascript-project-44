@@ -1,8 +1,8 @@
 const getRandomNumber = (min, max) => {
-  const minNum = Math.ceil(min)
-  const maxNum = Math.floor(max)
+  const minNum = Math.ceil(min);
+  const maxNum = Math.floor(max);
   // NOSONAR
-  return Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum
-}
+  return Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum;
+};
 
-export default getRandomNumber
+export default getRandomNumber;
