@@ -3,9 +3,9 @@ import getRandomNumber from '../utils.js'
 
 const rule = 'Find the greatest common divisor of given numbers.'
 
-const getGcd = (x, y) => {
-  let a = x
-  let b = y
+const getGcd = (num1, num2) => {
+  let a = num1
+  let b = num2
 
   if (b === 0) return a
 
@@ -17,15 +17,15 @@ const getGcd = (x, y) => {
   return a
 }
 
-const makeRound = () => {
-  const x = getRandomNumber(1, 100)
-  const y = getRandomNumber(1, 100)
+const getRound = () => {
+  const num1 = getRandomNumber(1, 100)
+  const num2 = getRandomNumber(1, 100)
 
-  const question = `${x} ${y}`
-  const answer = String(getGcd(x, y))
-  return [question, answer]
+  const question = `${num1} ${num2}`
+  const correctAnswer = String(getGcd(num1, num2))
+  return [question, correctAnswer]
 }
 
 export default function playGcd() {
-  runEngine(rule, makeRound)
+  runEngine(rule, getRound)
 }

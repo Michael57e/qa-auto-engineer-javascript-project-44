@@ -7,12 +7,12 @@ const isEven = (num) => {
   return num % 2 === 0
 }
 
-const getQuestionAndAnswer = () => {
+const getRound = () => {
   const question = getRandomNumber(1, 100)
   const correctAnswer = isEven(question) ? 'yes' : 'no'
-  return [question, correctAnswer]
+  return [String(question), correctAnswer]
 }
 
-const startEvenGame = () => runEngine(rule, getQuestionAndAnswer)
+const startEvenGame = () => runEngine(rule, getRound)
 
 export default startEvenGame

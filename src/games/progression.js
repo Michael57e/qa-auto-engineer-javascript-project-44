@@ -11,13 +11,13 @@ const getProgression = (start, step, length) => {
   return progression
 }
 
-const makeRound = () => {
+const getRound = () => {
   const start = getRandomNumber(1, 20)
   const step = getRandomNumber(1, 5)
   const length = getRandomNumber(5, 10)
   const progression = getProgression(start, step, length)
 
-  const hiddenIndex = getRandomNumber(0, length - 1)
+  const hiddenIndex = getRandomNumber(0, progression.length - 1)
   const correctAnswer = String(progression[hiddenIndex])
 
   progression[hiddenIndex] = '..'
@@ -26,6 +26,6 @@ const makeRound = () => {
   return [question, correctAnswer]
 }
 
-const runProgressionGame = () => runEngine(rule, makeRound)
+const runProgressionGame = () => runEngine(rule, getRound)
 
 export default runProgressionGame

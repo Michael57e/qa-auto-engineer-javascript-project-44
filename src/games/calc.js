@@ -2,29 +2,32 @@ import runEngine from '../index.js'
 import getRandomNumber from '../utils.js'
 
 const rule = 'What is the result of the expression?'
+const operators = ['+', '-', '*']
 
-const getCalculation = () => {
-  const a = getRandomNumber(1, 50)
-  const b = getRandomNumber(1, 50)
-  const operators = ['+', '-', '*']
-  const op = operators[getRandomNumber(0, operators.length - 1)]
-
-  let correctAnswer
-  switch (op) {
+const calculate = (num1, num2, operator) => {
+  switch (operator) {
     case '+':
-      correctAnswer = a + b
-      break
+      return num1 + num2
     case '-':
-      correctAnswer = a - b
-      break
+      return num1 - num2
     case '*':
-      correctAnswer = a * b
-      break
-  }
-
-  return [`${a} ${op} ${b}`, String(correctAnswer)]
+      return num1 * num2
+    default:
+      throw new Error(`Unknown operator: ${operator}`)
+    }
 }
 
-const startCalcGame = () => runEngine(rule, getCalculation)
+const getRound = () => {
+  const num1 = getRandomNumber(1, 50)
+  const num2 = getRandomNumber(1, 50)
+  const operator = operators[getRandomNumber(0, operators.length - 1)]
+
+  const correctAnswer = calculate(a, b, operator)
+  const question = `${num1} ${operator} ${num2}`
+
+  return [question, String(correctAnswer)]
+}
+
+const startCalcGame = () => runEngine(rule, getRound)
 
 export default startCalcGame

@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.1",
-  "description": "[![Actions Status](https://github.com/Michael57e/qa-auto-engineer-javascript-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Michael57e/qa-auto-engineer-javascript-project-44/actions)",
+  "description": "Brain Games is a number of math-based games, where a player must answer correctly three times to win",
   "homepage": "https://github.com/Michael57e/qa-auto-engineer-javascript-project-44#readme",
   "bugs": {
     "url": "https://github.com/Michael57e/qa-auto-engineer-javascript-project-44/issues"
