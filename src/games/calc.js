@@ -22,7 +22,7 @@ const getRound = () => {
   const num2 = getRandomNumber(1, 50)
   const operator = operators[getRandomNumber(0, operators.length - 1)]
 
-  const correctAnswer = calculate(a, b, operator)
+  const correctAnswer = calculate(num1, num2, operator)
   const question = `${num1} ${operator} ${num2}`
 
   return [question, String(correctAnswer)]
