@@ -26,6 +26,6 @@ const getRound = () => {
   return [question, correctAnswer]
 }
 
-export default function playGcd() {
-  runEngine(rule, getRound)
-}
+const playGcd = () => runEngine(rule, getRound)
+
+export default playGcd
